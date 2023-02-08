@@ -30,7 +30,7 @@ mp_selfie_segmentation = mp.solutions.selfie_segmentation
 
 # For webcam/Video input:
 BG_COLOR = (192, 192, 192) # gray
-cap = cv2.VideoCapture("jpark.mp4")
+cap = cv2.VideoCapture("../ldh.mp4")
 with mp_selfie_segmentation.SelfieSegmentation(
     model_selection=1) as selfie_segmentation:
   bg_image = None

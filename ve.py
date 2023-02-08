@@ -53,7 +53,7 @@ with mp_pose.Pose(
         min_detection_confidence=0.5,
         min_tracking_confidence=0.5) as pose:
     
-    # #영상을 저장한다.
+    # 영상을 저장한다.
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
     out = cv2.VideoWriter("./OMG_output.avi", fourcc, 30, (int(cap.get(3)), int(cap.get(4))))
 
